@@ -1,1 +1,1 @@
-# LeegedHumanoidControl
+# LeggedHumanoidControl
