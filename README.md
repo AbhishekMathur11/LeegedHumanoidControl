@@ -1,1 +1,1 @@
-# LeggedHumanoidControl
+# Dual-Legged Robot Control
