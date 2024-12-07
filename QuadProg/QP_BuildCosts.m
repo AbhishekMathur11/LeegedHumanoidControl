@@ -18,7 +18,6 @@ function QP = QP_BuildCosts(QP, CM_ades, FP_ades, TR_ades)
 %% Compute H and f terms of swing foot tracking 
 % ---------------------------------------------
 
-% Theory:
 % (1) Given desired accelerations FP_ades and a weighing matrix Wfp, 
 %     the robot joint accelerations are sought that minimize the weighed cost 
 %     norm(FP_ades-FP_a)^2_W, where FP_a is the resulting foot point
@@ -75,7 +74,6 @@ ffp = Jfp'*Wfp*(dJfpxdq-FP_ades); % vector component of f related to swing
 %% Compute H and f terms of torso tracking 
 % ----------------------------------------
 
-% Theory:
 % (1) Given desired acceleration TR_ades of the hip joint and a weight wtr, 
 %     the robot joint accelerations ddq is sought that minimizes the weighed cost 
 %     norm(TR_ades-TR_a)^2_wtr, where TR_a is the hip joint acceleration.
@@ -123,7 +121,7 @@ ftau = zeros(5,1); % f related to torque generation
 %% Compute H and f terms of CoM tracking
 % --------------------------------------
 
-% Theory:
+
 % (1) Given desired accelerations CM_ades and a weighing matrix Wcom, 
 %     the robot ground reaction forces are sought that minimizes the weighed 
 %     cost "norm(CM_ades-CM_a)^2_Wcom", where CM_a is the actual CoM acceleration.
