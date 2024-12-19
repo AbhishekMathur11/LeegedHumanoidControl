@@ -4,7 +4,23 @@ This repository contains a MATLAB implementation of a humanoid controller that t
 
 ## Implementation
 
-Here is the video of 
+Here is the movement of the legged robot:
+
+![Alt text](images/norm.gif)
+
+In ideal conditions, the outputs look like this:
+
+![Alt text](images/plot1.png)
+
+In real scenarios, surfaces can be slippery and can have a smaller friction coefficient.
+
+For a surface that has friction coefficient of the order 10^-1
+
+![Alt text](images/slip1.png)
+
+For a surface with extremely low friction, the humanoid loses the ability to track and control itself and fails
+
+![Alt text](images/slip2.png)
 
 ### Key Concepts and Methodology
 
